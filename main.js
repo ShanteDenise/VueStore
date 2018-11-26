@@ -10,6 +10,8 @@ var app = new Vue({
         inventory: 10,
         onSale: true,
         details:["80% cotton", "20% polyester", "Long-tubed"],
+        //variants are used to store variations of a product
+        //Below you will see that the socks have different ids, colors, and photos
         variants: [
             {
                 variantId: 2234,
@@ -27,6 +29,7 @@ var app = new Vue({
         cart:0,
 
     },
+    //methods will hold your functions called in html
     methods: {
         addToCart(){
         this.cart += 1
